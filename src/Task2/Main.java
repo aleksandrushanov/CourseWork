@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void input(String inputString) {
-        Stream<String> wordCount = new ArrayList<>(List.of(inputString.split(""))).stream();
+        Stream<String> wordCount = new ArrayList<>(List.of(inputString.split(" "))).stream();
         System.out.println("В тексте слов \n" + wordCount.count());
         System.out.println("ТОР 10 слов: ");
         Stream<String> inputStringStream = new ArrayList<>(List.of(inputString.split(" "))).stream();
